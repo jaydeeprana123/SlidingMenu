@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/txt_openHotels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DA4D4D"
+            android:text="286 Open Restaurant"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_margin="10dp"/>
+
+
+
+
+
+<ListView
+
+    android:id="@+id/hotelsList"
+    android:divider="@null"
+
+    android:dividerHeight="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+
+</LinearLayout>
