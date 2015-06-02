@@ -10,7 +10,7 @@
             android:id="@+id/txt_openHotels"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#DA4D4D"
+            android:background="#D50000"
             android:text="286 Open Restaurant"
             android:gravity="center"
             android:textSize="16dp"

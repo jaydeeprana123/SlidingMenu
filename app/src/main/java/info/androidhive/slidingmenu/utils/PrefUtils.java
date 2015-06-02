@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+import info.androidhive.slidingmenu.model.HotelMenuItem;
+import info.androidhive.slidingmenu.model.HotelsList;
 import info.androidhive.slidingmenu.model.HotelsMenu;
 import info.androidhive.slidingmenu.model.HotelsMenuList;
 
@@ -25,6 +27,9 @@ public class PrefUtils {
         String area=preferences.getString("selectedArea", "");
         return  area;
     }
+
+
+
 
 
 
@@ -65,17 +70,17 @@ public class PrefUtils {
 
 
 
-//    public static void setMenuItemDetail(HotelMenuItem currentUser, Context ctx){
-//        ComplexPreferences complexPreferences = ComplexPreferences.getComplexPreferences(ctx, "hotel_menu_items_pref", 0);
-//        complexPreferences.putObject("hotel_menu_items_pref_value", currentUser);
-//        complexPreferences.commit();
-//    }
+    public static void setMenuItemDetail(HotelMenuItem currentUser, Context ctx){
+        ComplexPreferences complexPreferences = ComplexPreferences.getComplexPreferences(ctx, "hotel_menu_items_pref", 0);
+        complexPreferences.putObject("hotel_menu_items_pref_value", currentUser);
+        complexPreferences.commit();
+    }
 
-//    public static HotelMenuItem getMenuItemDetail(Context ctx){
-//        ComplexPreferences complexPreferences = ComplexPreferences.getComplexPreferences(ctx, "hotel_menu_items_pref", 0);
-//        HotelMenuItem currentUser = complexPreferences.getObject("hotel_menu_items_pref_value", HotelMenuItem.class);
-//        return currentUser;
-//    }
+    public static HotelMenuItem getMenuItemDetail(Context ctx){
+        ComplexPreferences complexPreferences = ComplexPreferences.getComplexPreferences(ctx, "hotel_menu_items_pref", 0);
+        HotelMenuItem currentUser = complexPreferences.getObject("hotel_menu_items_pref_value", HotelMenuItem.class);
+        return currentUser;
+    }
 
 
 //    public static void AddItemToCart(SubmitOrder currentUser, Context ctx){

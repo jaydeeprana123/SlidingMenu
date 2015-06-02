@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\DEsktopProjects\SlidingMenu\app\src\main\assets"/></dataSet><dataSet config="debug"><source path="D:\DEsktopProjects\SlidingMenu\app\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="1.3.0"><source path="D:\DEsktopProjects\SlidingMenu\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\1.3.0\assets"/></dataSet><dataSet config="main"><source path="D:\DEsktopProjects\SlidingMenu\app\src\main\assets"/></dataSet><dataSet config="debug"><source path="D:\DEsktopProjects\SlidingMenu\app\src\debug\assets"/></dataSet></merger>

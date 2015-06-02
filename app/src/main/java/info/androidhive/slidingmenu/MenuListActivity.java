@@ -1,8 +1,11 @@
 package info.androidhive.slidingmenu;
 
+
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,25 +27,52 @@ import info.androidhive.slidingmenu.utils.PrefUtils;
 /**
  * Created by jaydeeprana on 01-06-2015.
  */
-public class MenuListActivity extends Activity{
+public class MenuListActivity extends Activity {
+
+
+
 
     private ArrayList<HotelsMenu> hotelsMenuArrayList;
+
 
     HotelsMenuList hotelsMenuList;
     private ListView menuListView;
 
     private MyAppAdapter myAppAdapter;
 
+    private TextView hotelName;
+    private ImageView hotelImage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_list);
+        setToolbar();
 
        // Get Menu List
         hotelsMenuList = PrefUtils.getHotelsMenu(MenuListActivity.this);
 
         hotelsMenuArrayList = hotelsMenuList.hotelsMenuArrayList;
         menuListView= (ListView) findViewById(R.id.menuList);
+
+        myAppAdapter=new MyAppAdapter(hotelsMenuArrayList,MenuListActivity.this);
+        menuListView.setAdapter(myAppAdapter);
+
+
+        hotelName = (TextView) findViewById(R.id.hotelName);
+        hotelImage = (ImageView)findViewById(R.id.hotelImage);
+
+        hotelName.setText(getIntent().getStringExtra("hotel_name"));
+
+        Glide.with(MenuListActivity.this)
+                .load(getIntent().getStringExtra("hotel_path"))
+                .placeholder(R.drawable.ic_launcher)
+                .centerCrop()
+                .into(hotelImage);
+
+    }
+
+    private void setToolbar() {
     }
 
     private class MyAppAdapter extends BaseAdapter{
@@ -55,22 +85,23 @@ public class MenuListActivity extends Activity{
 
         }
 
-        public List<HotelsMenu> hotelMenu;
+        public List<HotelsMenu> parkingList;
         public Context context;
 
-        public MyAppAdapter(List<HotelsMenu> hotelMenu, Context context) {
-            this.hotelMenu = hotelMenu;
+
+        public MyAppAdapter(List<HotelsMenu> apps, Context context) {
+            this.parkingList = apps;
             this.context = context;
         }
 
         @Override
         public int getCount() {
-            return hotelMenu.size();
+            return parkingList.size();
         }
 
         @Override
         public Object getItem(int position) {
-            return hotelMenu.get(position);
+            return position;
         }
 
         @Override
@@ -95,7 +126,7 @@ public class MenuListActivity extends Activity{
                 viewHolder.image= (ImageView) rowView.findViewById(R.id.hotelImage);
 
                 Glide.with(MenuListActivity.this)
-                        .load(AppConstants.IMAGE_PATH + hotelMenu.get(position).CategoryFolderPath + hotelMenu.get(position).CategoryIcon)
+                        .load(AppConstants.IMAGE_PATH + parkingList.get(position).CategoryFolderPath + parkingList.get(position).CategoryIcon)
                         .placeholder(R.drawable.ic_launcher)
                         .centerCrop()
                         .into(viewHolder.image);
@@ -106,11 +137,20 @@ public class MenuListActivity extends Activity{
                 viewHolder = (ViewHolder) convertView.getTag();
             }
 
-            viewHolder.name.setText(hotelMenu.get(position).CategoryName+"");
+            viewHolder.name.setText(parkingList.get(position).CategoryName+"");
 
             rowView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+                    PrefUtils.setHotelsMenuItems(parkingList.get(position), MenuListActivity.this);
+
+                    Intent it = new Intent(MenuListActivity.this, MenuItemListActivity.class);
+                    it.putExtra("hotel_name", getIntent().getStringExtra("hotel_name"));
+                    it.putExtra("hotel_path", getIntent().getStringExtra("hotel_path"));
+                    it.putExtra("hotel_category",parkingList.get(position).CategoryName+"");
+                    startActivity(it);
+
 
 
                 }

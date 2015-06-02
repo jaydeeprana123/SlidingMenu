@@ -49,10 +49,9 @@ public class HotelListFragment  extends Fragment {
     private ProgressDialog progressDialog;
     private ArrayList<Hotel> hotelArrayList;
 
+    String imagePath;
+
     public static HotelListFragment newInstance() {
-
-
-
 
         HotelListFragment contentFragment = new HotelListFragment();
         Bundle bundle = new Bundle();
@@ -110,6 +109,8 @@ public class HotelListFragment  extends Fragment {
         return rootView;
     }
 
+
+
     private class MyAppAdapter extends BaseAdapter{
 
         // Holder Class
@@ -135,7 +136,7 @@ public class HotelListFragment  extends Fragment {
 
         @Override
         public Object getItem(int position) {
-            return parkingList.get(position);
+            return position;
         }
 
         @Override
@@ -176,6 +177,10 @@ public class HotelListFragment  extends Fragment {
 
             Log.e("image path:", AppConstants.IMAGE_PATH + parkingList.get(position).LogoPath + parkingList.get(position).Logo + "");
 
+            imagePath = AppConstants.IMAGE_PATH + parkingList.get(position).LogoPath + parkingList.get(position).Logo;
+
+            Log.e("Jaydeep path:", ""+ imagePath);
+
             // For Image Compress
             Glide.with(getActivity())
                     .load(AppConstants.IMAGE_PATH + parkingList.get(position).LogoPath + parkingList.get(position).Logo)
@@ -196,10 +201,10 @@ public class HotelListFragment  extends Fragment {
             return rowView;
         }
 
-        
+
     }
 
-    private void getHotelsMenu(final String name, String id) {
+    private void getHotelsMenu( final String name, String id) {
 
         progressDialog=new ProgressDialog(getActivity());
         progressDialog.setMessage("Loading...");
@@ -219,11 +224,11 @@ public class HotelListFragment  extends Fragment {
 
                 Intent it = new Intent(getActivity(), MenuListActivity.class);
 
-                    it.putExtra("hotel_name", name);
+                   it.putExtra("hotel_name", name+"");
+                it.putExtra("hotel_path", imagePath+"");
+
 
                 startActivity(it);
-
-
 
             }
 

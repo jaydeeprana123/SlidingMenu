@@ -24,6 +24,9 @@
             </intent-filter>
         </activity>
         <activity android:name="info.androidhive.slidingmenu.NavigationActivity" />
+        <activity android:name="info.androidhive.slidingmenu.MenuListActivity" />
+        <activity android:name="info.androidhive.slidingmenu.MenuItemListActivity" />
+        <activity android:name="info.androidhive.slidingmenu.MenuItemDetailActivity" />
     </application>
 
 </manifest>

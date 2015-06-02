@@ -57,3 +57,15 @@ activity#info.androidhive.slidingmenu.NavigationActivity
 ADDED from AndroidManifest.xml:26:9
 	android:name
 		ADDED from AndroidManifest.xml:26:19
+activity#info.androidhive.slidingmenu.MenuListActivity
+ADDED from AndroidManifest.xml:27:9
+	android:name
+		ADDED from AndroidManifest.xml:27:19
+activity#info.androidhive.slidingmenu.MenuItemListActivity
+ADDED from AndroidManifest.xml:28:9
+	android:name
+		ADDED from AndroidManifest.xml:28:19
+activity#info.androidhive.slidingmenu.MenuItemDetailActivity
+ADDED from AndroidManifest.xml:29:9
+	android:name
+		ADDED from AndroidManifest.xml:29:19

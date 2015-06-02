@@ -2,6 +2,27 @@
 <items version="2" >
 
     <item
+        jar="C:\Users\jaydeeprana\.gradle\caches\modules-2\files-2.1\com.mcxiaoke.volley\library\1.0.16\d8f5b9114ebe0f76de7fbf55e950540959ce4ff8\library-1.0.16.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d8f5b9114ebe0f76de7fbf55e950540959ce4ff8">
+        <dex dex="D:\DEsktopProjects\SlidingMenu\app\build\intermediates\pre-dexed\debug\library-1.0.16-a9f2d8ad1784d563f0d88aad5166fec6f97512c2.jar" />
+    </item>
+    <item
+        jar="D:\android-sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="D:\DEsktopProjects\SlidingMenu\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-06f6838d042bd52b584513a72de16771f90e535b.jar" />
+    </item>
+    <item
+        jar="D:\DEsktopProjects\SlidingMenu\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
+        <dex dex="D:\DEsktopProjects\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-ee74c7df02b90af2081399caa03aced7d6e61b5b.jar" />
+    </item>
+    <item
         jar="C:\Users\jaydeeprana\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.5.1\4401b15ca6aad7bc187e8daea1c84e9674186ea8\glide-3.5.1.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -14,27 +35,6 @@
         revision="22.0.1"
         sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
         <dex dex="D:\DEsktopProjects\SlidingMenu\app\build\intermediates\pre-dexed\debug\gson-2.3.1-f0e29fef3937aa907ffd5e75853fd48d73ead589.jar" />
-    </item>
-    <item
-        jar="C:\Users\jaydeeprana\.gradle\caches\modules-2\files-2.1\com.mcxiaoke.volley\library\1.0.16\d8f5b9114ebe0f76de7fbf55e950540959ce4ff8\library-1.0.16.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="d8f5b9114ebe0f76de7fbf55e950540959ce4ff8">
-        <dex dex="D:\DEsktopProjects\SlidingMenu\app\build\intermediates\pre-dexed\debug\library-1.0.16-a9f2d8ad1784d563f0d88aad5166fec6f97512c2.jar" />
-    </item>
-    <item
-        jar="D:\DEsktopProjects\SlidingMenu\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\1.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
-        <dex dex="D:\DEsktopProjects\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-ee74c7df02b90af2081399caa03aced7d6e61b5b.jar" />
-    </item>
-    <item
-        jar="D:\android-sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
-        <dex dex="D:\DEsktopProjects\SlidingMenu\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-06f6838d042bd52b584513a72de16771f90e535b.jar" />
     </item>
 
 </items>
