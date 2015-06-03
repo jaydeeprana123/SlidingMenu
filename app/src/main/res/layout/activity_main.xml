@@ -17,7 +17,7 @@
         <ImageView
             android:scaleType="fitXY"
             android:id="@+id/image_content"
-            android:src="#80000000"
+            android:src="#99000000"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
@@ -30,16 +30,18 @@
             android:layout_height="wrap_content">
 
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
 
-                android:id="@+id/profile_image"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:src="@drawable/ic_launcher"
-
+                android:scaleType="centerCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
                 android:layout_gravity="center"
-                />
+                app:border_width="1dp"
+                app:border_color="#fff"
+                android:src="@drawable/logo"/>
+
 
 
 
@@ -52,7 +54,10 @@
                 android:textSize="22dp"
                 android:layout_gravity="center"
                 android:textColor="#fff"
-                android:textStyle="bold"/>
+                />
+
+
+
 
             <TextView
                 android:id="@+id/splash"
@@ -60,9 +65,10 @@
                 android:padding="10dp"
                 android:layout_height="wrap_content"
                 android:text="Choose Your favourite restaurant and Enjoy the food !"
-                android:textStyle="bold"
+
                 android:layout_gravity="center"
                 android:textColor="#fff"/>
+
 
             </LinearLayout>
 
