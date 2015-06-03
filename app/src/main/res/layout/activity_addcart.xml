@@ -1,0 +1,202 @@
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#B71C1C"
+
+
+
+        >
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:src="@drawable/chinesee"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+
+
+
+
+            />
+
+
+        <TextView  android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Chinese"
+
+android:textSize="20dp"
+            android:textColor="#fff"
+           android:layout_gravity="center"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_rs1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:text="₹ 2000"
+            android:layout_gravity="center"
+
+            />
+
+
+
+        </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/txt_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:padding="16dp"
+        android:text="Amulll....The tase of India"
+        android:textStyle="italic"
+android:textColor="#E60000"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+       />
+
+    <TextView
+        android:id="@+id/txt_select_diet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:text="Select Your Diet :"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:layout_gravity="center"
+        android:hint="Select City"
+
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+
+        ></Spinner>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+
+
+        >
+
+    <TextView
+        android:id="@+id/txt_select_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+android:textSize="12dp"
+        android:text="Quantity :"
+
+        />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="+"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="1"
+
+            />
+
+        <Button
+            android:id="@+id/btn_minuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="-"
+
+            />
+
+        </LinearLayout>
+
+    <TextView
+    android:id="@+id/txt_total"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:textColor="#000000"
+    android:layout_marginTop="10dp"
+    android:text="Total  "
+        android:padding="16dp"
+    android:layout_gravity="center"
+
+    />
+
+    <TextView
+        android:id="@+id/txt_rs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:textSize="20dp"
+        android:textColor="#DA4D4D"
+android:layout_marginTop="5dp"
+        android:text="₹ 2000"
+        android:layout_gravity="center"
+
+        />
+
+    <Button
+        android:id="@+id/btn_addCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="16dp"
+        android:textColor="#fff"
+        android:text="ADD TO CART"
+        android:layout_marginTop="16dp"
+
+        android:background="#B71C1C"
+
+        />
+
+
+
+
+</LinearLayout>
